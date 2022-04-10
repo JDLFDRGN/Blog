@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    min-height: 83vh;
+    padding: 2em;
+}
+/*Home*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+.home>div{
+    width: 18em;
+    height: 25em;
+    margin: 0.1em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    transition: .5s;
+}
+.home>div:hover{
+    transform: translateY(-50px);
+    cursor: pointer;
+    opacity: 0.8;
+}
+.home-first-page{
+    background-image: url(img/front/one.jpg);
+}
+.home-second-page{
+    background-image: url(img/front/two.jpg);
+}
+.home-third-page{
+    background-image: url(img/front/three.webp);
+}
+.home-fourth-page{
+    background-image: linear-gradient(red, yellow);
+}
+.home-first-page>div{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.home-second-page>div{
+    background-color: rgba(0, 255, 0, 0.4);
+}
+.home-third-page>div{
+    background-color: rgba(0, 0, 255, 0.4);
+}
+.home-fourth-page>div{
+    display: flex;
+    flex-direction: column;
+}
+.home>div>div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.home>div>*{
+    font-weight: 900;
+    font-size: 2em;
+    color: whitesmoke;
+}
+.home-about-images{
+    position: relative;
+    height: 70%;
+    width: 100%;
+}
+.home-about-images>img{
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    box-shadow: 1px 5px 3px 3px black;
+}
+.home-fourth-page h3{
+    position: absolute;
+    z-index: 5;
+}
+.home-image-one{
+   top: 40%;
+   left: 10%;
+   z-index: 3;
+}
+.home-image-two{
+    left: 33%;
+    top: 5%;
+    z-index: 2;
+}
+.home-image-three{
+    top: 40%;
+    right: 10%;
+    z-index: 1;
+}
+/*Header*/
+header{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    background-color:aliceblue;
+    z-index: 10;
+}   
+header img{
+    height: 2em;
+    margin-right: 1em;
+}
+.header-title{
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    height: 13vh;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 2em;
+    z-index: 50;
+    overflow: hidden;
+}
+footer>p{
+    color: whitesmoke;
+}
+
+/*Food*/
+.food-page{
+    margin-top: 5em;
+}
+.food{
+    display: flex;
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.food img{
+    height: 15rem;
+    width: 40%;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+.food>div{
+    width: 70%;
+}
+.food-title{
+    margin: 1em 0;
+}
+/*Travel*/
+.travel-page{
+    margin-top: 5em;
+}
+.travel{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 10px;
+    z-index: 1;
+}   
+.travel img{
+    height: 15rem;
+    width: 35%;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+.travel-description{
+    width: 100%;
+    display: flex;
+    margin-top: 1em;
+}
+.travel-paragraph{
+    width: 60%;
+    padding: 0.5em;
+}
+.travel-paragraph>p{
+    margin-bottom: 1em;
+}
+/*Lifestyle*/
+.lifestyle-page{
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lifestyle{
+    display: flex;
+    width: 20em;
+    position: relative;
+    height: fit-content;
+    margin: 2em;
+}
+.lifestyle>img{
+    width: 100%;
+    height:25vh;
+    z-index: 2;
+    border-radius: 10px;
+}
+.lifestyle-two{
+    transform: translateY(120%);
+}
+.lifestyle>p{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: justify;
+    padding: 1em;
+    transition: 1s;
+    font-weight: bolder;
+    color: transparent;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lifestyle-one>p{
+    left: 0;
+}
+.lifestyle-two>p{
+    right: 0;
+}
+.lifestyle-three>p{
+    right: 0;
+}
+.lifestyle-one>img:hover+p{
+    color: darkcyan;
+    left: 100%;
+}
+.lifestyle-two>img:hover+p{
+    color: darkmagenta;
+    right: 100%;
+}
+.lifestyle-three>img:hover+p{
+    color: darkred;
+    right: 100%;
+}
+
+/*About*/
+.about-page{
+    display: flex;
+    margin-top: 6em;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 20em;
+    height: 60vh;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.about:nth-child(1){
+    background-color: palevioletred;
+    transform: rotateZ(-20deg);
+    z-index: 3;
+}
+.about:nth-child(2){
+    background-color: darkcyan;
+    transform: rotateZ(20deg);
+    z-index: 2;
+}
+.about:nth-child(3){
+    background-color: darkorchid;
+    transform: rotateZ(-20deg);
+    z-index: 1;
+}
+.about:hover{
+    transform: rotateZ(0);
+    cursor: pointer;
+    z-index: 9;
+}
+.about>p{
+    padding: 2em;
+    text-align: justify;
+    font-size: 1.1em;
+    color: whitesmoke;
+}
+
+@media (max-width: 1000px){
+    .home{
+        flex-direction: column;
+    }
+    .about-page{
+        flex-direction: column;
+    }
+    .lifestyle-page{
+        flex-direction: column;
+    }
+    .lifestyle-two{
+        transform: translateY(0);
+    }
+    .lifestyle-one>img:hover+p, .lifestyle-one>p:hover{
+        color: red;
+        left: 0;
+        z-index: 8;
+        cursor:crosshair;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .lifestyle-two>img:hover+p, .lifestyle-two>p:hover{
+        color: magenta;
+        right: 0;
+        z-index: 8;
+        cursor:crosshair;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .lifestyle-three>img:hover+p, .lifestyle-three>p:hover{
+        color: cyan;
+        right: 0;
+        z-index: 8;
+        cursor:crosshair;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 600px){
+    .food{
+        flex-direction: column;
+    }
+    .food img{
+        width: 100%;
+    }
+    .food>div{
+        width: 100%;
+    }
+    .travel img{
+        width: 100%;
+    }
+    .travel-description{
+        flex-direction: column;
+    }
+    .travel-paragraph{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
