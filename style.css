@@ -92,18 +92,23 @@ body{
     z-index: 5;
 }
 .home-image-one{
-   top: 40%;
+   top: 37%;
    left: 10%;
-   z-index: 3;
+   z-index: 4;
 }
 .home-image-two{
-    left: 33%;
-    top: 5%;
-    z-index: 2;
+    top: 8%;
+    right: 10%;
+    z-index: 3;
 }
 .home-image-three{
     top: 40%;
     right: 10%;
+    z-index: 2;
+}
+.home-image-four{
+    top: 5%;
+    left: 10%;
     z-index: 1;
 }
 /*Header*/
